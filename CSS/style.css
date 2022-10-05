@@ -15,7 +15,7 @@ body {
     margin-bottom: 15px;
 }
 .area {
-    width: 20vw;
+    width: 6vw;
     height: 60vw;
     background-color: black;
     border-right: 5px solid rgb(13, 236, 13);
@@ -23,7 +23,6 @@ body {
     background-image: url(../Imagens/fundo.png);
 }
 .painel {
-    
     display: none;
     flex-direction: column;
     text-align: center;
@@ -49,7 +48,7 @@ body {
     left: 88vw; 
     width: 7vw; 
     height: 6vw; 
-    background-color: green; 
+    
     text-align: center;
 }
 #div1 {
@@ -59,7 +58,7 @@ body {
     left: 88vw; 
     width: 7vw; 
     height: 6vw; 
-    background-color: green; 
+    
     text-align: center;
 }
 .player {
@@ -117,7 +116,7 @@ img {
         display: flex;
         flex-direction: column;
         width: 87vw;
-        height: 63vw;
+        height: 40vw;
         align-items: center;
     }
     .pontos {
