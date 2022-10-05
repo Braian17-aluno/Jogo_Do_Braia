@@ -85,42 +85,42 @@ player.style.top = 0;
 });
 
 window.addEventListener('keydown', (e) => {
-    let area = document.querySelector("#area");
-    let areaWidth = parseInt(getComputedStyle(area).width)
+    //let area = document.querySelector("#area");
+    //let areaWidth = parseInt(getComputedStyle(area).width)
     let fundoHeight = parseInt(getComputedStyle(fundo).height);
-    let playerLeft= parseInt(getComputedStyle(player).left);
+    //let playerLeft= parseInt(getComputedStyle(player).left);
     let playerTop = parseInt(getComputedStyle(player).top);
-    let playerWidth = parseInt(getComputedStyle(player).width);
+  // let playerWidth = parseInt(getComputedStyle(player).width);
     let playerHeight= parseInt(getComputedStyle(player).height);
 
 switch (e.key) {
+  /*
+  case 'a':
+  if (playerLeft <= 0){
+          break;
+  }
+  player.style.left = parseInt(player.style.left) - moveBy + 'vw';
+          break;
 
-case 'a':
-if (playerLeft <= 0){
-        break;
-}
-player.style.left = parseInt(player.style.left) - moveBy + 'vw';
-        break;
-
-case 'd':
-if (playerLeft >= areaWidth  - playerWidth){
-        break;
-}
-player.style.left = parseInt(player.style.left) + moveBy + 'vw';
-        break;
-
-case 'w':
-if (playerTop<= 0){
-        break;
-}
-player.style.top = parseInt(player.style.top) - moveBy + 'vw';
-        break;
-case 's':
-if (playerTop >= fundoHeight  - playerHeight){
-        break;
-}
-player.style.top = parseInt(player.style.top) + moveBy + 'vw';
-        break;
+  case 'd':
+  if (playerLeft >= areaWidth  - playerWidth){
+          break;
+  }
+  player.style.left = parseInt(player.style.left) + moveBy + 'vw';
+          break;
+  */
+  case 'w':
+  if (playerTop<= 0){
+          break;
+  }
+  player.style.top = parseInt(player.style.top) - moveBy + 'vw';
+          break;
+  case 's':
+  if (playerTop >= fundoHeight  - playerHeight){
+          break;
+  }
+  player.style.top = parseInt(player.style.top) + moveBy + 'vw';
+          break;
 }
 
 });
@@ -189,7 +189,7 @@ function move(Direcao) {
         }
         player.style.top = parseInt(player.style.top) + moveB + 'vw';
                 break;
-        
+        /*
         case "esquerda":
 
         if (playerLeft <= 0){
@@ -205,11 +205,12 @@ function move(Direcao) {
         }
         player.style.left = parseInt(player.style.left) + moveB + 'vw';
                 break;
+                */
     }
 }
 function atirar(){
     atira.play();
-    let left = parseInt(window.getComputedStyle(player).getPropertyValue("left"));
+    //let left = parseInt(window.getComputedStyle(player).getPropertyValue("left"));
     let top = parseInt(window.getComputedStyle(player).getPropertyValue("top"));
     let tiros = document.querySelector(".tiros");
     let tiro = document.createElement("div");
@@ -243,7 +244,7 @@ function atirar(){
         }
         
         let balaDireita = parseInt(window.getComputedStyle(tiro).getPropertyValue("left"));
-        tiro.style.top = top +30+ "px"
+        tiro.style.top = top +30+"px"
         tiro.style.left = balaDireita + 5
     },1);
     setTimeout("remover()",2000);
@@ -262,8 +263,8 @@ function para2(){
     div2.style.top = Math.floor(Math.random()*35 + 1)+"vw"
     pontuacao.innerHTML="Pontuação: " + pontos
     if(pontos >= 20){
-        alert("Você venceu!")
-        alert("Reiniciando...")
+        alert("Você venceu!");
+        alert("Reiniciando...");
         location.reload();
     }
    
@@ -338,7 +339,7 @@ function para3(){
 
 
 document.querySelector("#atirar").addEventListener("click",()=>{botaoatira()});
-document.querySelector("#esquerda").addEventListener("click",()=>{ move('esquerda')});
-document.querySelector("#direita").addEventListener("click",()=>{ move('direita')});
+//document.querySelector("#esquerda").addEventListener("click",()=>{ move('esquerda')});
+//document.querySelector("#direita").addEventListener("click",()=>{ move('direita')});
 document.querySelector("#baixo").addEventListener("click",()=>{ move('baixo')});
 document.querySelector("#acima").addEventListener("click", ()=>{move('acima')});
