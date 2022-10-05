@@ -7,19 +7,24 @@
     <link rel="stylesheet" href="../CSS/style.css">
     </head>
 	<body>
+		
 		<div class="fundo" id="fundo">
-
+			<div class="tiros"></div>
 		<div class="area" id="area">
 		
-		<div id="div2" >
-			Inimigo2
+		<div id="div2" class="inimigo">
+			<img src="../Imagens/enemy.png" alt="enemy">
 		</div>
-		<div id="div1">
-			Inimigo1
+		<div id="div1" class="inimigo">
+			<img src="../Imagens/enemy.png" alt="enemy">
 		</div>
 
-		<div class="player">Jogador</div>
-		<div class="tiro"></div>
+		<div class="player"><img src="../Imagens/player.png" alt="player"></div>
+		
+		</div>
+	</div> 
+
+	<div class="pontos">Pontuação: 10</div>
 
 		<div class="painel">
 			
@@ -28,13 +33,18 @@
 				<button type="button"  id="para">Parar cursor 1</button>
 				<button type="button"  id="para2" >Parar cursor 2</button><hr>
 				-->
-
+				<div class="botoes2">
+				<button type="button" id="atirar"><img src="../Imagens/ervilha.png" alt="bala"></button>
 				<button type="button"  id="acima"><img src="../Imagens/Up.png" alt="cima"></button><br>
-				<div class="botoes">
-				<button type="button"  id="esquerda"><img src="../Imagens/Left.png" alt=""></button>
-				<button type="button"  id="direita" ><img src="../Imagens/Right.png" alt=""></button><br>
 				</div>
-				<button type="button"  id="baixo" ><img src="../Imagens/Down.png" alt=""></button>
+				
+				<div class="botoes">
+				<button type="button"  id="esquerda"><img src="../Imagens/Left.png" alt="esquerda"></button>
+				<button type="button"  id="direita" ><img src="../Imagens/Right.png" alt="direita"></button><br>
+				</div>
+				
+				<button type="button"  id="baixo" ><img src="../Imagens/Down.png" alt="baixo"></button>
+				
 				<!--
 				<button type="button"  id="alturaMais" >+Altura</button>
 				<button type="button"  id="alturaMenos" >-Altura</button><hr>
@@ -42,11 +52,9 @@
 				<button type="button"  id="larguraMenos" >-Largura</button><hr>
 				<button type="button"  id="cor">Muda a cor</button>
 				-->
-				
-			
 		</div>
-	</div>	
-	</div>
+		
+		
 		<script src="../JS/JogoJS.js"></script>
 	</body>
 </html>
