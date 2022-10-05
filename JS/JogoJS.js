@@ -1,3 +1,4 @@
+
 let pontos = 10
 let pontuacao = document.querySelector(".pontos")
 
@@ -343,3 +344,9 @@ document.querySelector("#atirar").addEventListener("click",()=>{botaoatira()});
 //document.querySelector("#direita").addEventListener("click",()=>{ move('direita')});
 document.querySelector("#baixo").addEventListener("click",()=>{ move('baixo')});
 document.querySelector("#acima").addEventListener("click", ()=>{move('acima')});
+alert("Olá! Use as teclas 'w' para se mexer pra cima e 's' para se mexer pra baixo! (ou use as flechas!)");
+alert("Use a tecla 'q'(ou aperte o botão das ervilhas) para COMEÇAR a atirar! Você não vai parar de atirar depois disso.");
+alert("Quando você acertar um inimigo você ganha dois pontos, com 20 pontos você ganha!");
+alert("Se um inimigo tocar no fundo do gramado você perde um ponto, com 0 pontos você perde!");
+alert("Se um inimigo te tocar você perde instantaneamente!");
+alert("Bom Jogo!");
